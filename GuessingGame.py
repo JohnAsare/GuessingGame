@@ -13,8 +13,12 @@ def guess_the_number(user_number):
     lossing_anoucement= 'You lost, give me $50 :('
 
     print(intro)
-    user_number = int(input('\n What is the number on my card?:'))
     my_card_number = randint(0, 10000000)
 
     if user_number == my_card_number:
-        print('f'{winning_anoucement})
+        print(f'{winning_anoucement}')
+    else:
+        print(f'{lossing_anoucement}')
+
+
+guess_the_number(int(input('\n What is the number on my card?: ')))
