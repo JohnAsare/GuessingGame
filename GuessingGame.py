@@ -8,15 +8,15 @@ from random import randint
 
 def guess_the_number(user_number):
 
-    winning_anoucement = 'You have won $100!'
+    winning_anoucement = 'you, won $100!'
     lossing_anoucement= 'You lost, give me $50 :('
 
-    my_card_number = randint(0, 10000000)
+    my_card_number = randint(0, 10)
 
     if user_number == my_card_number:
-        print(f'{winning_anoucement}')
+        print(f'Congratulations! {winning_anoucement}')
     else:
-        print(f'{lossing_anoucement}, the correct number is {my_card_number}')
+        print(f'{lossing_anoucement}. The correct number is {my_card_number}')
 
 
 print('If you guess the correct number on my card, you will win $100. If you guessed wrong,'
